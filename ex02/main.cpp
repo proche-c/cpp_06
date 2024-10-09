@@ -72,5 +72,6 @@ int main(void)
 	Base	&br = *b;
 	identify(b);
 	identify(br);
+	delete b;
 	return 0;
 }
