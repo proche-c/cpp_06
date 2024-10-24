@@ -14,12 +14,10 @@
 
 int main(int argc, char **argv)
 {
-	std::string input = std::string(argv[1]);
-
 	if (argc == 2)
 	{
+		std::string input = std::string(argv[1]);
 		ScalarConverter::convert(input);
-
 	}
 
 	return 0;

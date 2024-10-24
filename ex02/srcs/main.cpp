@@ -13,15 +13,14 @@
 #include "A.hpp"
 #include "B.hpp"
 #include "C.hpp"
-#include <random>
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 
 Base	*generate( void )
 {
-	std::random_device rd;
-	std::mt19937 gen(rd());
-	std::uniform_int_distribution<> distrib(1,3);
-	int	random_int = distrib(gen);
+	std::srand(std::time(0)); 
+	int random_int = std::rand() % 3 + 1;
 
 	if (random_int % 3 == 1)
 		return (new A);
