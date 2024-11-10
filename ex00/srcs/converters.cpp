@@ -82,7 +82,7 @@ void	printFloat(std::string &str)
 		std::cout << "char: Non displayable" << std::endl;
 	else
 		std::cout << "char: '" << static_cast<char>(f) << "'" << std::endl;
-	if (f > MAX_INT || f < MIN_INT)
+	if (f > static_cast<float>(MAX_INT) || f < static_cast<float>(MIN_INT))
 		std::cout << "int: impossible" << std::endl;
 	else
 		std::cout << "int: " << static_cast<int>(f) << std::endl;
@@ -107,11 +107,11 @@ void	printDouble(std::string &str)
 		std::cout << "char: Non displayable" << std::endl;
 	else
 		std::cout << "char: '" << static_cast<char>(d) << "'" << std::endl;
-	if (d > MAX_INT || d < MIN_INT)
+	if (d > static_cast<double>(MAX_INT) || d < static_cast<double>(MIN_INT))
 		std::cout << "int: impossible" << std::endl;
 	else
 		std::cout << "int: " << static_cast<int>(d) << std::endl;
-	if (d > MAX_FLOAT || d < MIN_FLOAT)
+	if (d > static_cast<double>(MAX_FLOAT) || d < static_cast<double>(MIN_FLOAT))
 		std::cout << "float: impossible" << std::endl;
 	else
 	{

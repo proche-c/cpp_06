@@ -18,6 +18,7 @@
 #include <limits>
 #include <cstdlib>
 #include <iomanip>
+#include <cmath>
 
 #define MIN_INT std::numeric_limits<int>::min()
 #define MAX_INT std::numeric_limits<int>::max()
